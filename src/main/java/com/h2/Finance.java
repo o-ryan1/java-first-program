@@ -1,5 +1,6 @@
 package com.h2;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class Finance {
@@ -11,7 +12,7 @@ public class Finance {
     SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
     MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>");
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         String command = args[0];
         if(!commandsToUsage.containsKey(command)){
             System.out.println(command + ": command not found");
